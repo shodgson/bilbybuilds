@@ -1,0 +1,202 @@
+{{ $data := index .Site.Data (.Get "id") }} {{ $leancanvas := $data.leancanvas
+}}
+<div>
+  <!-- Top row -->
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
+    <div
+      style="
+        border-style: solid;
+        border-radius: 8px;
+        margin: 2px;
+        padding: 4px;
+        flex: 1;
+      "
+    >
+      <h4>Problem</h4>
+      <ul>
+        {{ range index $leancanvas "Problem" }}
+        <li>
+          <small>{{ . }}</small>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+      "
+    >
+      <div
+        style="
+          border-style: solid;
+          border-radius: 8px;
+          margin: 2px;
+          padding: 4px;
+          flex: 1;
+          flex-wrap: wrap;
+        "
+      >
+        <h4>Solution</h4>
+        <ul>
+          {{ range index $leancanvas "Solution" }}
+          <li>
+            <small>{{ . }}</small>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div
+        style="
+          border-style: solid;
+          border-radius: 8px;
+          margin: 2px;
+          padding: 4px;
+          flex: 1;
+          flex-wrap: wrap;
+        "
+      >
+        <h4>Key metrics</h4>
+        <ul>
+          {{ range index $leancanvas "Key-metrics" }}
+          <li>
+            <small>{{ . }}</small>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    <div
+      style="
+        border-style: solid;
+        border-radius: 8px;
+        margin: 2px;
+        padding: 4px;
+        flex: 1;
+        flex-wrap: wrap;
+      "
+    >
+      <h4>Unique value proposition</h4>
+      <ul>
+        {{ range index $leancanvas "Unique-value-proposition" }}
+        <li>
+          <small>{{ . }}</small>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+      "
+    >
+      <div
+        style="
+          border-style: solid;
+          border-radius: 8px;
+          margin: 2px;
+          padding: 4px;
+          flex: 1;
+          flex-wrap: wrap;
+        "
+      >
+        <h4>Unfair advantage</h4>
+        <ul>
+          {{ range index $leancanvas "Unfair-advantage" }}
+          <li>
+            <small>{{ . }}</small>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div
+        style="
+          border-style: solid;
+          border-radius: 8px;
+          margin: 2px;
+          padding: 4px;
+          flex: 1;
+          flex-wrap: wrap;
+        "
+      >
+        <h4>Channels</h4>
+        <ul>
+          {{ range index $leancanvas "Channels" }}
+          <li>
+            <small>{{ . }}</small>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    <div
+      style="
+        border-style: solid;
+        border-radius: 8px;
+        margin: 2px;
+        padding: 4px;
+        flex: 1;
+        flex-wrap: wrap;
+      "
+    >
+      <h4>Customer segment</h4>
+      <ul>
+        {{ range index $leancanvas "Customer-segment" }}
+        <li>
+          <small>{{ . }}</small>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+  <!-- Bottom row -->
+  <div style="display: flex">
+    <div
+      style="
+        border-style: solid;
+        border-radius: 8px;
+        margin: 2px;
+        padding: 4px;
+        flex: 1;
+        flex-wrap: wrap;
+      "
+    >
+      <h4>Cost structure</h4>
+      <ul>
+        {{ range index $leancanvas "Cost-structure" }} {{ range $key, $value :=
+        . }}
+        <li><small>{{ $key }}: {{ $value }}</small></li>
+        {{ end }} {{ end }}
+      </ul>
+    </div>
+    <div
+      style="
+        border-style: solid;
+        border-radius: 8px;
+        margin: 2px;
+        padding: 4px;
+        flex: 1;
+        flex-wrap: wrap;
+      "
+    >
+      <h4>Revenue streams</h4>
+      <ul>
+      {{ range index $leancanvas "Revenue-streams" }} {{ range $key, $value := .
+      }}
+      <li><small>{{ $key }}: {{ $value }}</small></li>
+      {{ end }} {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>

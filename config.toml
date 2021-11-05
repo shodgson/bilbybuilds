@@ -1,0 +1,40 @@
+baseURL = 'https://bilbybuilds.com/'
+languageCode = 'en-us'
+title = 'Bilby Builds'
+theme = 'etch'
+
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "Homepage for Bilby and all the things we build"
+  copyright = "Copyright © 2021 BilbyBuilds"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "speedbuilds"
+    name = "Speed builds"
+    title = "Speed builds"
+    url = "/speedbuilds/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "projects"
+    title = "projects"
+    url = "/projects/"
+    weight = 20
+
+
+#[permalinks]
+#  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true

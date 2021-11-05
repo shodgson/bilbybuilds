@@ -1,0 +1,36 @@
+Canvas:
+ - "Linkydink: One link for your fans to schedule your evergreen content in their calendar"
+
+Problem:
+  - YouTubers need repeat viewers for evergreen content; notifications only happen for new content
+  - Fans want to follow a whole series (e.g. 30 days of yoga)
+
+Customer-segment:
+  - Fitness youtubers
+  - Fitness youtuber fans
+
+Unique-value-proposition:
+  - One link => full series engagement
+
+Solution:
+  - Creators can create a 'series' of links
+  - Fans set their time preferences
+  - All links are added to the user's calendar
+
+Channels:
+  - YouTube descriptions and comments
+
+Cost-structure:
+  - Tech costs: domain, serverless functions. <$30/year until profitable
+  - Processing fees: 5%
+
+Revenue-streams:
+  - Subscriptions: $5/month per creator
+
+Key-metrics:
+  - Number of link clicks (total and per creator)
+  - Number of series added to calendars
+  - Number of creators
+
+Unfair-advantage:
+  - Simplicity
