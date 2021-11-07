@@ -7,13 +7,23 @@ enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+
 [params]
   description = "Homepage for Bilby and all the things we build"
   copyright = "Copyright © 2021 BilbyBuilds"
   dark = "auto"
   highlight = true
+  #FullWidthTheme = true
+  #CenterTheme = true
 
 [menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 90
+
   [[menu.main]]
     identifier = "speedbuilds"
     name = "Speed builds"
