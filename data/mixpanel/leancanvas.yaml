@@ -1,0 +1,38 @@
+Canvas:
+ - "Mixpanel job title"
+
+Problem:
+  - Managers of freemium products need to convert free users to paid plans
+  - When targeting a team of users, a manager needs to know who is the right person to contact
+  - Manually searching for job titles is tedious
+
+Customer-segment:
+  - Product and sales managers of freemium business SaaS tools
+  - Non-technical managers
+
+Unique-value-proposition:
+  - No-code solution to add job titles to Mixpanel
+
+Solution:
+  - Simple web app that requires a Mixpanel API
+  - We use Clearbit to add LinkedIn profile data to Mixpanel
+
+Channels:
+  - Antler cohort
+  - Organic search
+
+Cost-structure:
+  - Contact enrichment costs: between 1c and 50c per contact
+  - Tech costs: domain, serverless functions. <$500/year until profitable
+  - Payment processing fees: 5%
+
+Revenue-streams:
+  - Usage billing: $1 per 100 profiles
+
+Key-metrics:
+  - Number of profiles search
+  - Number of users
+
+Unfair-advantage:
+  - Simplicity
+  - Transparent pricing
