@@ -41,7 +41,8 @@ Out-of-scope:
 Stack:
 - Backend
   - Compute
-    - AWS: Lambda (written in Golang)
+    - AWS: Lambda (written in Go v1.17)
+    - AWS: API Gateway (v2/HTTP)
   - Database
     - AWS: DynamoDB
   - User identity
@@ -49,15 +50,16 @@ Stack:
   - Payments
     - Stripe (checkout)
   - Tooling
-    - Serverless
+    - Serverless v2.57
 - Frontend
   - Landing page
     - Vanilla HTML/CSS/JS
   - App
-    - Vue, Vue-router, Vuex
-    - Tailwind, DaisyUI
+    - Vue v3.2, Vue-router v4.0, Vuex v4.0
+    - Tailwind v2.2, DaisyUI v1.16
   - Tooling
-    - Vite
+    - Vite v2.1
+    - TypeScript v4.4
 - Tooling
   - GitHub
 
