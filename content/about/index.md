@@ -3,8 +3,6 @@ title = "About"
 +++
 
 
-I am Bilby
-
 I like inventing and creating things
 
 I am learning the craft of business-building through repetition

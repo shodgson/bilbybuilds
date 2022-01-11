@@ -65,13 +65,20 @@ Stack:
 
 ## Guide
 1. Buy a domain, e.g. from Namecheap
-1. Setup a Hosted Zone in AWS' Route53
+1. Create a free email account on Gmail
+1. Create a new AWS root account
+1. Create a new AWS IAM user
+  1. Then create a profile in .aws/credentials
+  1. Update .env to include profile name
+1. Setup a Hosted Zone in AWS' Route53 
 1. Set domain's nameservers to AWS on Namecheap
+1. (Optional) Set up a mail server with Zoho
 1. Create an S3 bucket and configure as a website (see script)
+1. Create a Stripe account and a subscription product
 1. Jump through hoops to deploy:
   1. Deploy to production
 ```
-make deploy STAGE=production
+make deploy STAGE=${STAGE}
 ```
   1. Create a Stripe webhook with `customer.subscription.created` and `customer.subscription.deleted` events sent to the appropriate API address (e.g. https://{api-id}.execute-api.{region}.amazonaws.com/subscription/webhook)
   1. Update .env.production with the output from the previous command and the `Signing secret` from the Stripe webhook (e.g. whsec\_abc123)
@@ -81,6 +88,7 @@ make deploy STAGE=production
 make buildfront
 make deployfront AWS_PROFILE={profile} BUCKETNAME={bucketname}
 ```
+The site should be available at http://{bucketname}.s3-website{. or -}region}.amazonaws.com
 1. Create a cloudfront distribution to direct requests to the domain to the S3 bucket
 
 ## Optional extras that are low effort
